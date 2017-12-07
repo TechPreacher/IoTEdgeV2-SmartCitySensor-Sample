@@ -91,7 +91,6 @@ namespace SmartCitySensor
 
             // Initialize Sensor.
             Sensor _sensor = new Sensor();
-            _sensor.SensorName = "TestSensor";
 
             while (true)
             {

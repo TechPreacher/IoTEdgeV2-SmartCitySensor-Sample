@@ -8,3 +8,13 @@ C:\Users\saschac\Documents\Visual Studio Code\Azure IoT Edge\My Demo\FilterModul
 C:\Users\saschac\Documents\Visual Studio Code\Azure IoT Edge\My Demo\FilterModule\bin\Debug\netcoreapp2.0\FilterModule.pdb
 C:\Users\saschac\Documents\Visual Studio Code\Azure IoT Edge\My Demo\FilterModule\obj\Debug\netcoreapp2.0\FilterModule.dll
 C:\Users\saschac\Documents\Visual Studio Code\Azure IoT Edge\My Demo\FilterModule\obj\Debug\netcoreapp2.0\FilterModule.pdb
+c:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\FilterModule\bin\Debug\netcoreapp2.0\FilterModule.deps.json
+c:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\FilterModule\bin\Debug\netcoreapp2.0\FilterModule.runtimeconfig.json
+c:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\FilterModule\bin\Debug\netcoreapp2.0\FilterModule.runtimeconfig.dev.json
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\FilterModule\bin\Debug\netcoreapp2.0\FilterModule.dll
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\FilterModule\bin\Debug\netcoreapp2.0\FilterModule.pdb
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\FilterModule\obj\Debug\netcoreapp2.0\FilterModule.csproj.CoreCompileInputs.cache
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\FilterModule\obj\Debug\netcoreapp2.0\FilterModule.AssemblyInfoInputs.cache
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\FilterModule\obj\Debug\netcoreapp2.0\FilterModule.AssemblyInfo.cs
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\FilterModule\obj\Debug\netcoreapp2.0\FilterModule.dll
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\FilterModule\obj\Debug\netcoreapp2.0\FilterModule.pdb

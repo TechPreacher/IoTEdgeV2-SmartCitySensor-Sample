@@ -8,3 +8,13 @@ C:\Users\saschac\Documents\Visual Studio Code\Azure IoT Edge\My Demo\SmartCitySe
 C:\Users\saschac\Documents\Visual Studio Code\Azure IoT Edge\My Demo\SmartCitySensor\bin\Debug\netcoreapp2.0\SmartCitySensor.pdb
 C:\Users\saschac\Documents\Visual Studio Code\Azure IoT Edge\My Demo\SmartCitySensor\obj\Debug\netcoreapp2.0\SmartCitySensor.dll
 C:\Users\saschac\Documents\Visual Studio Code\Azure IoT Edge\My Demo\SmartCitySensor\obj\Debug\netcoreapp2.0\SmartCitySensor.pdb
+c:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\SmartCitySensor\bin\Debug\netcoreapp2.0\SmartCitySensor.deps.json
+c:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\SmartCitySensor\bin\Debug\netcoreapp2.0\SmartCitySensor.runtimeconfig.json
+c:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\SmartCitySensor\bin\Debug\netcoreapp2.0\SmartCitySensor.runtimeconfig.dev.json
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\SmartCitySensor\bin\Debug\netcoreapp2.0\SmartCitySensor.dll
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\SmartCitySensor\bin\Debug\netcoreapp2.0\SmartCitySensor.pdb
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\SmartCitySensor\obj\Debug\netcoreapp2.0\SmartCitySensor.csproj.CoreCompileInputs.cache
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\SmartCitySensor\obj\Debug\netcoreapp2.0\SmartCitySensor.AssemblyInfoInputs.cache
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\SmartCitySensor\obj\Debug\netcoreapp2.0\SmartCitySensor.AssemblyInfo.cs
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\SmartCitySensor\obj\Debug\netcoreapp2.0\SmartCitySensor.dll
+C:\Users\saschac\Source\GitHub\mine\IoTEdgeV2-SmartCitySensor-Sample\SmartCitySensor\obj\Debug\netcoreapp2.0\SmartCitySensor.pdb

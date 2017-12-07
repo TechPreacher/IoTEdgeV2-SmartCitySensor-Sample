@@ -7635,11 +7635,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\saschac\\Documents\\Visual Studio Code\\Azure IoT Edge\\My Demo\\SmartCitySensor\\SmartCitySensor.csproj",
+      "projectUniqueName": "c:\\Users\\saschac\\Source\\GitHub\\mine\\IoTEdgeV2-SmartCitySensor-Sample\\SmartCitySensor\\SmartCitySensor.csproj",
       "projectName": "SmartCitySensor",
-      "projectPath": "c:\\Users\\saschac\\Documents\\Visual Studio Code\\Azure IoT Edge\\My Demo\\SmartCitySensor\\SmartCitySensor.csproj",
+      "projectPath": "c:\\Users\\saschac\\Source\\GitHub\\mine\\IoTEdgeV2-SmartCitySensor-Sample\\SmartCitySensor\\SmartCitySensor.csproj",
       "packagesPath": "C:\\Users\\saschac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\saschac\\Documents\\Visual Studio Code\\Azure IoT Edge\\My Demo\\SmartCitySensor\\obj\\",
+      "outputPath": "C:\\Users\\saschac\\Source\\GitHub\\mine\\IoTEdgeV2-SmartCitySensor-Sample\\SmartCitySensor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
