@@ -1,13 +1,16 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "ccbec55fec5f9c8619fc5ad6318feaf17ce490d3"
+    "signature": "b156931f66b37b19919028a9889db63b2a6980f7"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "SmartCitySensor/1.0.0": {
         "dependencies": {
+          "Bifrost.Devices.Gpio": "0.0.2",
+          "Bifrost.Devices.Gpio.Abstractions": "0.0.1",
+          "Bifrost.Devices.Gpio.Core": "0.0.1",
           "Microsoft.Azure.Devices.Client": "1.6.0-preview-001",
           "Microsoft.Extensions.Configuration": "2.0.0-preview2-final",
           "Microsoft.Extensions.Configuration.Abstractions": "2.0.0-preview2-final",
@@ -19,6 +22,28 @@
         },
         "runtime": {
           "SmartCitySensor.dll": {}
+        }
+      },
+      "Bifrost.Devices.Gpio/0.0.2": {
+        "dependencies": {
+          "Bifrost.Devices.Gpio.Abstractions": "0.0.1",
+          "Bifrost.Devices.Gpio.Core": "0.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.6/Bifrost.Devices.Gpio.dll": {}
+        }
+      },
+      "Bifrost.Devices.Gpio.Abstractions/0.0.1": {
+        "dependencies": {
+          "Bifrost.Devices.Gpio.Core": "0.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.6/Bifrost.Devices.Gpio.Abstractions.dll": {}
+        }
+      },
+      "Bifrost.Devices.Gpio.Core/0.0.1": {
+        "runtime": {
+          "lib/netstandard1.6/Bifrost.Devices.Gpio.Core.dll": {}
         }
       },
       "DotNetty.Buffers/0.4.6": {
@@ -1571,6 +1596,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Bifrost.Devices.Gpio/0.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-upm5PFyapdj62+02azge1s9dAf9s0J69+yqUYu2aWvukg/PqIrCVDzubbzDbOeJAybitVqBpLw6VYF4qjg1eaQ==",
+      "path": "bifrost.devices.gpio/0.0.2",
+      "hashPath": "bifrost.devices.gpio.0.0.2.nupkg.sha512"
+    },
+    "Bifrost.Devices.Gpio.Abstractions/0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Zqkxy6/S0JtcSYjRimYFVkKYgL/PRM5ikx2duy+M2z+stmQ65HjpM40Khb5u8bLCL6gsqgL11TQ5TBR21ThJ6g==",
+      "path": "bifrost.devices.gpio.abstractions/0.0.1",
+      "hashPath": "bifrost.devices.gpio.abstractions.0.0.1.nupkg.sha512"
+    },
+    "Bifrost.Devices.Gpio.Core/0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cf21W4KlNczkb/XwaXURUuFG/ZyyCBPwtlEFDGIXLg3ejDzPF0PMsSwBtGGc3NEbVd8rq/vr5g8G6zamVJMmrQ==",
+      "path": "bifrost.devices.gpio.core/0.0.1",
+      "hashPath": "bifrost.devices.gpio.core.0.0.1.nupkg.sha512"
     },
     "DotNetty.Buffers/0.4.6": {
       "type": "package",

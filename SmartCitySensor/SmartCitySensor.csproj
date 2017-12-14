@@ -18,5 +18,8 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.0.0-preview2-final" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.0-preview2-final" />
     <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+    <PackageReference Include="Bifrost.Devices.Gpio" Version="0.0.2" />
+    <PackageReference Include="Bifrost.Devices.Gpio.Abstractions" Version="0.0.1" />
+    <PackageReference Include="Bifrost.Devices.Gpio.Core" Version="0.0.1" />
   </ItemGroup>
 </Project>

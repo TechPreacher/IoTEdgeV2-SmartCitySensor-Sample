@@ -93,12 +93,12 @@ namespace FilterModule
             Console.WriteLine("IoT Hub module client initialized.");
 
             // Read TemperatureThreshold from Module Twin Desired Properties
-            var deviceTwin = await ioTHubModuleClient.GetTwinAsync();
-            var twinCollection = deviceTwin.Properties.Desired;
+            var moduleTwin = await ioTHubModuleClient.GetTwinAsync();
+            var moduleTwinCollection = moduleTwin.Properties.Desired;
 
-            if (twinCollection["airpressureThreshold"] != null)
+            if (moduleTwinCollection["airpressureThreshold"] != null)
             {
-                airpressureThreshold = twinCollection["airpressureThreshold"];
+                airpressureThreshold = moduleTwinCollection["airpressureThreshold"];
                 Console.WriteLine($"AirPressureThreshold read from Module Twin on Init: {airpressureThreshold}");
             }
             else

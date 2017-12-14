@@ -2,6 +2,45 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Bifrost.Devices.Gpio/0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Bifrost.Devices.Gpio.Abstractions": "0.0.1",
+          "Bifrost.Devices.Gpio.Core": "0.0.1",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Bifrost.Devices.Gpio.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Bifrost.Devices.Gpio.dll": {}
+        }
+      },
+      "Bifrost.Devices.Gpio.Abstractions/0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Bifrost.Devices.Gpio.Core": "0.0.1",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Bifrost.Devices.Gpio.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Bifrost.Devices.Gpio.Abstractions.dll": {}
+        }
+      },
+      "Bifrost.Devices.Gpio.Core/0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Bifrost.Devices.Gpio.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Bifrost.Devices.Gpio.Core.dll": {}
+        }
+      },
       "DotNetty.Buffers/0.4.6": {
         "type": "package",
         "dependencies": {
@@ -2424,6 +2463,36 @@
     }
   },
   "libraries": {
+    "Bifrost.Devices.Gpio/0.0.2": {
+      "sha512": "upm5PFyapdj62+02azge1s9dAf9s0J69+yqUYu2aWvukg/PqIrCVDzubbzDbOeJAybitVqBpLw6VYF4qjg1eaQ==",
+      "type": "package",
+      "path": "bifrost.devices.gpio/0.0.2",
+      "files": [
+        "bifrost.devices.gpio.0.0.2.nupkg.sha512",
+        "bifrost.devices.gpio.nuspec",
+        "lib/netstandard1.6/Bifrost.Devices.Gpio.dll"
+      ]
+    },
+    "Bifrost.Devices.Gpio.Abstractions/0.0.1": {
+      "sha512": "Zqkxy6/S0JtcSYjRimYFVkKYgL/PRM5ikx2duy+M2z+stmQ65HjpM40Khb5u8bLCL6gsqgL11TQ5TBR21ThJ6g==",
+      "type": "package",
+      "path": "bifrost.devices.gpio.abstractions/0.0.1",
+      "files": [
+        "bifrost.devices.gpio.abstractions.0.0.1.nupkg.sha512",
+        "bifrost.devices.gpio.abstractions.nuspec",
+        "lib/netstandard1.6/Bifrost.Devices.Gpio.Abstractions.dll"
+      ]
+    },
+    "Bifrost.Devices.Gpio.Core/0.0.1": {
+      "sha512": "cf21W4KlNczkb/XwaXURUuFG/ZyyCBPwtlEFDGIXLg3ejDzPF0PMsSwBtGGc3NEbVd8rq/vr5g8G6zamVJMmrQ==",
+      "type": "package",
+      "path": "bifrost.devices.gpio.core/0.0.1",
+      "files": [
+        "bifrost.devices.gpio.core.0.0.1.nupkg.sha512",
+        "bifrost.devices.gpio.core.nuspec",
+        "lib/netstandard1.6/Bifrost.Devices.Gpio.Core.dll"
+      ]
+    },
     "DotNetty.Buffers/0.4.6": {
       "sha512": "GDHnG1IRS3EQsBGvPdUo160QT83DCWLWFR/VNy9DPeZhqiGifTv4ZmuY8tHhsdg/MkDj4rCrMfc9q522T5bLew==",
       "type": "package",
@@ -7617,6 +7686,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Bifrost.Devices.Gpio >= 0.0.2",
+      "Bifrost.Devices.Gpio.Abstractions >= 0.0.1",
+      "Bifrost.Devices.Gpio.Core >= 0.0.1",
       "Microsoft.Azure.Devices.Client >= 1.6.0-preview-001",
       "Microsoft.Extensions.Configuration >= 2.0.0-preview2-final",
       "Microsoft.Extensions.Configuration.Abstractions >= 2.0.0-preview2-final",
@@ -7708,6 +7780,18 @@
           "System.Runtime.Loader": {
             "target": "Package",
             "version": "4.3.0"
+          },
+          "Bifrost.Devices.Gpio": {
+            "target": "Package",
+            "version": "0.0.2"
+          },
+          "Bifrost.Devices.Gpio.Abstractions": {
+            "target": "Package",
+            "version": "0.0.1"
+          },
+          "Bifrost.Devices.Gpio.Core": {
+            "target": "Package",
+            "version": "0.0.1"
           }
         },
         "imports": [
