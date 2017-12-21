@@ -37,7 +37,7 @@ These steps have been adapted from the tutorial [Develop and deploy a C# IoT Edg
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Azure IoT Edge extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-edge)
 - [C# for Visual Studio Code (powered by OmniSharp) extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
-- [Docker](https://docs.docker.com/engine/installation/) on the same computer that has Visual Studio Code. The Community Edition (CE) is - sufficient for this tutorial. 
+- [Docker](https://docs.docker.com/engine/installation/) on the same computer that has Visual Studio Code. The Community Edition (CE) is sufficient for this tutorial.
 - [.NET Core 2.0 SDK](https://www.microsoft.com/net/core#windowscmd)
 
 ### Create a Container Registry
@@ -69,7 +69,7 @@ in the pop-up text box at the top of the VS Code window, enter the image name. F
 
 Sign in to Docker by entering the following command in the VS Code integrated terminal:
 
-```
+```Batchfile
 docker login -u <username> -p <password> <Login server>
 ```
 
@@ -82,13 +82,15 @@ Push the image to your Docker repository. Select *View > Command Palette* and se
 Add the credentials for your registry to the Edge runtime on the computer where you are running your Edge device. These credentials give the runtime access to pull the container.
 
 For Windows, run:
-```
-iotedgectl login --address <your container registry address> --username <username> --password <password> 
+
+```Batchfile
+iotedgectl login --address <your container registry address> --username <username> --password <password>
 ```
 
 For Linux, run:
-```
-sudo iotedgectl login --address <your container registry address> --username <username> --password <password> 
+
+```Batchfile
+sudo iotedgectl login --address <your container registry address> --username <username> --password <password>
 ```
 
 ### Deploy the SmartCitySensor IoT Edge Module to your IoT Edge device
@@ -99,7 +101,7 @@ Now use Azure IoT Edge to deploy the module to your IoT Edge device from the clo
 - Go to *IoT Edge (preview)* and select your IoT Edge device.
 - Select *Set Modules*.
 - Select *Add IoT Edge Module*.
-- In the *Name* field, enter ```smartCitySensor```. 
+- In the *Name* field, enter ```smartCitySensor```.
 - In the *Image URI* field, enter the address of your container in your container registry ```<your container registry address>/smartcitysensor:latest```.
 - Leave the other settings unchanged, and select *Save*.
 - Back in the Add modules step, select *Next*.
@@ -107,17 +109,17 @@ Now use Azure IoT Edge to deploy the module to your IoT Edge device from the clo
 - In the Review template step, select *Submit*.
 - Return to the device details page and select *Refresh*. You should see the new *smartCitySensor* module running along the *IoT Edge runtime*.
 
-### View the generated data
+### View the generated data from SmartCitySensor
 
 Open the command prompt on the computer running your simulated device again. Confirm that the module deployed from the cloud is running on your IoT Edge device by running:
 
-```
+```Batchfile
 sudo docker ps
 ```
 
 View the messages being sent from the smartCitySensor module to the cloud:
- 
-```
+
+```Batchfile
 sudo docker logs -f smartCitySensor
 ```
 
@@ -135,7 +137,7 @@ Publish it to your Docker Registry as ```<your container registry address>/filte
 - Go to *IoT Edge (preview)* and select your IoT Edge device.
 - Select *Set Modules*.
 - Select *Add IoT Edge Module*.
-- In the *Name* field, enter ```filterModule```. 
+- In the *Name* field, enter ```filterModule```.
 - In the *Image URI* field, enter the address of your container in your container registry ```<your container registry address>/filtermodule:latest```.
 - Check the *Enable* box so that you can edit the module twin.
 - Replace the JSON in the text box for the module twin with the following JSON:
@@ -164,17 +166,17 @@ Publish it to your Docker Registry as ```<your container registry address>/filte
 - In the Review template step, select *Submit*.
 - Return to the device details page and select *Refresh*. You should see the new *filterModule* running along with the *smartCitySensor* module and the *IoT Edge runtime*.
 
-### View the generated data
+### View the generated data from FilterModule
 
 Open the command prompt on the computer running your simulated device again. Confirm that both modules deployed from the cloud are running on your IoT Edge device by running:
 
-```
+```Batchfile
 sudo docker ps
 ```
 
 View the messages being sent from the filterModule module to the cloud:
- 
- ```
+
+ ```Batchfile
  sudo docker logs -f filterModule
  ```
 
