@@ -16,7 +16,7 @@ The first project, [SmartCitySensor](./SmartCitySensor) simulates a sensor that 
 }
 ```
 
-it also simulates a "cheap" air pressure sensor that sometimes delivers zero-values. { "AirPressure":0 }
+it also simulates a "cheap" air pressure sensor that sometimes delivers zero-values. ```{ "AirPressure":0 }```.
 
 The second project, [FilterModule](./FilterModule) takes the readings from *SmartCitySensor* and filters the readings that contain invalid / zero *AirPressure* values.
 
