@@ -2,7 +2,6 @@ namespace SmartCitySensor
 {
     using System;
     using System.IO;
-    using System.Collections.Generic;
     using System.Runtime.InteropServices;
     using System.Runtime.Loader;
     using System.Security.Cryptography.X509Certificates;
@@ -11,7 +10,6 @@ namespace SmartCitySensor
     using System.Threading.Tasks;
     using Microsoft.Azure.Devices.Client;
     using Microsoft.Azure.Devices.Client.Transport.Mqtt;
-    using Microsoft.Azure.Devices.Shared;
     using Newtonsoft.Json;
 
     class Program
@@ -20,7 +18,7 @@ namespace SmartCitySensor
         {
             // The Edge runtime gives us the connection string we need -- it is injected as an environment variable
             string connectionString = Environment.GetEnvironmentVariable("EdgeHubConnectionString");
-   
+
             // Cert verification is not yet fully functional when using Windows OS for the container
             bool bypassCertVerification = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
             if (!bypassCertVerification) InstallCert();
@@ -68,6 +66,7 @@ namespace SmartCitySensor
             store.Close();
         }
 
+
         /// <summary>
         /// Initializes the DeviceClient and sets up the callback to receive
         /// messages containing temperature information
@@ -89,7 +88,7 @@ namespace SmartCitySensor
             await ioTHubModuleClient.OpenAsync();
             Console.WriteLine("IoT Hub module client initialized.");
 
-            // Initialize Sensor.
+                        // Initialize Sensor.
             Sensor _sensor = new Sensor();
 
             while (true)

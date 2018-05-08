@@ -28,3 +28,7 @@ artifacts/
 *.pidb
 *.svclog
 *.scc
+.vs
+
+[Bb]in/
+[Oo]bj/

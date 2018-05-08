@@ -2,45 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "Bifrost.Devices.Gpio/0.0.2": {
-        "type": "package",
-        "dependencies": {
-          "Bifrost.Devices.Gpio.Abstractions": "0.0.1",
-          "Bifrost.Devices.Gpio.Core": "0.0.1",
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.6/Bifrost.Devices.Gpio.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.6/Bifrost.Devices.Gpio.dll": {}
-        }
-      },
-      "Bifrost.Devices.Gpio.Abstractions/0.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Bifrost.Devices.Gpio.Core": "0.0.1",
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.6/Bifrost.Devices.Gpio.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.6/Bifrost.Devices.Gpio.Abstractions.dll": {}
-        }
-      },
-      "Bifrost.Devices.Gpio.Core/0.0.1": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.6/Bifrost.Devices.Gpio.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.6/Bifrost.Devices.Gpio.Core.dll": {}
-        }
-      },
       "DotNetty.Buffers/0.4.6": {
         "type": "package",
         "dependencies": {
@@ -2463,36 +2424,6 @@
     }
   },
   "libraries": {
-    "Bifrost.Devices.Gpio/0.0.2": {
-      "sha512": "upm5PFyapdj62+02azge1s9dAf9s0J69+yqUYu2aWvukg/PqIrCVDzubbzDbOeJAybitVqBpLw6VYF4qjg1eaQ==",
-      "type": "package",
-      "path": "bifrost.devices.gpio/0.0.2",
-      "files": [
-        "bifrost.devices.gpio.0.0.2.nupkg.sha512",
-        "bifrost.devices.gpio.nuspec",
-        "lib/netstandard1.6/Bifrost.Devices.Gpio.dll"
-      ]
-    },
-    "Bifrost.Devices.Gpio.Abstractions/0.0.1": {
-      "sha512": "Zqkxy6/S0JtcSYjRimYFVkKYgL/PRM5ikx2duy+M2z+stmQ65HjpM40Khb5u8bLCL6gsqgL11TQ5TBR21ThJ6g==",
-      "type": "package",
-      "path": "bifrost.devices.gpio.abstractions/0.0.1",
-      "files": [
-        "bifrost.devices.gpio.abstractions.0.0.1.nupkg.sha512",
-        "bifrost.devices.gpio.abstractions.nuspec",
-        "lib/netstandard1.6/Bifrost.Devices.Gpio.Abstractions.dll"
-      ]
-    },
-    "Bifrost.Devices.Gpio.Core/0.0.1": {
-      "sha512": "cf21W4KlNczkb/XwaXURUuFG/ZyyCBPwtlEFDGIXLg3ejDzPF0PMsSwBtGGc3NEbVd8rq/vr5g8G6zamVJMmrQ==",
-      "type": "package",
-      "path": "bifrost.devices.gpio.core/0.0.1",
-      "files": [
-        "bifrost.devices.gpio.core.0.0.1.nupkg.sha512",
-        "bifrost.devices.gpio.core.nuspec",
-        "lib/netstandard1.6/Bifrost.Devices.Gpio.Core.dll"
-      ]
-    },
     "DotNetty.Buffers/0.4.6": {
       "sha512": "GDHnG1IRS3EQsBGvPdUo160QT83DCWLWFR/VNy9DPeZhqiGifTv4ZmuY8tHhsdg/MkDj4rCrMfc9q522T5bLew==",
       "type": "package",
@@ -3272,10 +3203,10 @@
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
         "LICENSE.TXT",
+        "Microsoft.NETCore.Platforms.2.0.0.nupkg.sha512",
+        "Microsoft.NETCore.Platforms.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.2.0.0.nupkg.sha512",
-        "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -3459,7 +3390,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.3": {
-      "sha512": "wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
+      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
       "type": "package",
       "path": "newtonsoft.json/10.0.3",
       "files": [
@@ -7686,9 +7617,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Bifrost.Devices.Gpio >= 0.0.2",
-      "Bifrost.Devices.Gpio.Abstractions >= 0.0.1",
-      "Bifrost.Devices.Gpio.Core >= 0.0.1",
       "Microsoft.Azure.Devices.Client >= 1.6.0-preview-001",
       "Microsoft.Extensions.Configuration >= 2.0.0-preview2-final",
       "Microsoft.Extensions.Configuration.Abstractions >= 2.0.0-preview2-final",
@@ -7702,32 +7630,33 @@
   },
   "packageFolders": {
     "C:\\Users\\saschac\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\saschac\\Source\\GitHub\\mine\\IoTEdgeV2-SmartCitySensor-Sample\\SmartCitySensor\\SmartCitySensor.csproj",
+      "projectUniqueName": "D:\\Work\\Temp\\SmartCitySensor\\SmartCitySensor.csproj",
       "projectName": "SmartCitySensor",
-      "projectPath": "c:\\Users\\saschac\\Source\\GitHub\\mine\\IoTEdgeV2-SmartCitySensor-Sample\\SmartCitySensor\\SmartCitySensor.csproj",
+      "projectPath": "D:\\Work\\Temp\\SmartCitySensor\\SmartCitySensor.csproj",
       "packagesPath": "C:\\Users\\saschac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\saschac\\Source\\GitHub\\mine\\IoTEdgeV2-SmartCitySensor-Sample\\SmartCitySensor\\obj\\",
+      "outputPath": "D:\\Work\\Temp\\SmartCitySensor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\saschac\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/aziot-device-sdk/api/v3/index.json": {},
-        "https://www.myget.org/F/dotnet-template-azure-iot-edge-module/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
@@ -7744,54 +7673,42 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
           "Microsoft.Azure.Devices.Client": {
             "target": "Package",
-            "version": "1.6.0-preview-001"
+            "version": "[1.6.0-preview-001, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
-            "version": "2.0.0-preview2-final"
+            "version": "[2.0.0-preview2-final, )"
           },
           "Microsoft.Extensions.Configuration.Abstractions": {
             "target": "Package",
-            "version": "2.0.0-preview2-final"
+            "version": "[2.0.0-preview2-final, )"
           },
           "Microsoft.Extensions.Configuration.Binder": {
             "target": "Package",
-            "version": "2.0.0-preview2-final"
+            "version": "[2.0.0-preview2-final, )"
           },
           "Microsoft.Extensions.Configuration.EnvironmentVariables": {
             "target": "Package",
-            "version": "2.0.0-preview2-final"
+            "version": "[2.0.0-preview2-final, )"
           },
           "Microsoft.Extensions.Configuration.FileExtensions": {
             "target": "Package",
-            "version": "2.0.0-preview2-final"
+            "version": "[2.0.0-preview2-final, )"
           },
           "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
-            "version": "2.0.0-preview2-final"
+            "version": "[2.0.0-preview2-final, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           },
           "System.Runtime.Loader": {
             "target": "Package",
-            "version": "4.3.0"
-          },
-          "Bifrost.Devices.Gpio": {
-            "target": "Package",
-            "version": "0.0.2"
-          },
-          "Bifrost.Devices.Gpio.Abstractions": {
-            "target": "Package",
-            "version": "0.0.1"
-          },
-          "Bifrost.Devices.Gpio.Core": {
-            "target": "Package",
-            "version": "0.0.1"
+            "version": "[4.3.0, )"
           }
         },
         "imports": [

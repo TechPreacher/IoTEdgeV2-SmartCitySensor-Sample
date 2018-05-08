@@ -18,6 +18,7 @@ namespace FilterModule
     {
         static int counter;
         static int airpressureThreshold;
+
         static void Main(string[] args)
         {
             // The Edge runtime gives us the connection string we need -- it is injected as an environment variable
@@ -121,6 +122,8 @@ namespace FilterModule
         /// </summary>
         static async Task<MessageResponse> FilterMessages(Message message, object userContext)
         {
+            Console.WriteLine($"FilterMessages has been called.");
+
             int counterValue = Interlocked.Increment(ref counter);
 
             try {
