@@ -14,6 +14,9 @@ namespace SmartCitySensor
 
     class Program
     {
+        static DeviceClient ioTHubModuleClient;
+        static System.Threading.Timer timer;
+
         static void Main(string[] args)
         {
             // The Edge runtime gives us the connection string we need -- it is injected as an environment variable
@@ -84,26 +87,34 @@ namespace SmartCitySensor
             ITransportSettings[] settings = { mqttSetting };
 
             // Open a connection to the Edge runtime
-            DeviceClient ioTHubModuleClient = DeviceClient.CreateFromConnectionString(connectionString, settings);
+            ioTHubModuleClient = DeviceClient.CreateFromConnectionString(connectionString, settings);
             await ioTHubModuleClient.OpenAsync();
             Console.WriteLine("IoT Hub module client initialized.");
 
-                        // Initialize Sensor.
-            Sensor _sensor = new Sensor();
+            // Set up Timer.
+            timer = new System.Threading.Timer(TimerCallback, null, 2000, 2000);
+        }
 
-            while (true)
+        async static void TimerCallback(object state)
+        {
+            // Initialize Sensor and get values.
+            Sensor sensor = new Sensor();
+            sensor.NoiseLevel = sensor.GetNoiseLevel();
+            sensor.AirPressure = sensor.GetAirPressure();
+            sensor.AirQuality = sensor.GetAirQuality();
+            sensor.Timecreated = DateTime.Now;
+            string sensorJson = JsonConvert.SerializeObject(sensor);
+
+            // Send data upstream.
+            var outMessage = new Message(Encoding.UTF8.GetBytes(sensorJson));
+            try
             {
-                _sensor.NoiseLevel = _sensor.GetNoiseLevel();
-                _sensor.AirPressure = _sensor.GetAirPressure();
-                _sensor.AirQuality = _sensor.GetAirQuality();
-                _sensor.Timecreated = DateTime.Now;
-                string _sensorJson = JsonConvert.SerializeObject(_sensor);
-
-                var outMessage = new Message(Encoding.UTF8.GetBytes(_sensorJson));
                 await ioTHubModuleClient.SendEventAsync("output1", outMessage);
-                Console.WriteLine("Message sent to output1: " + _sensorJson);
-
-                Thread.Sleep(2500);
+                Console.WriteLine("Message sent to output1: " + sensorJson);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error sending message to output1: " + ex.ToString());
             }
         }
     }
