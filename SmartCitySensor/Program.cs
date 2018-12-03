@@ -19,7 +19,7 @@ namespace SmartCitySensor
 
         static void Main(string[] args)
         {
-            // The Edge runtime gives us the connection string we need -- it is injected as an environment variable
+            // The Edge runtime gives us the connection string we need -> it is injected as an environment variable
             string connectionString = Environment.GetEnvironmentVariable("EdgeHubConnectionString");
 
             // Cert verification is not yet fully functional when using Windows OS for the container
